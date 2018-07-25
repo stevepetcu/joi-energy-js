@@ -28,4 +28,5 @@ router.get('/recommend/:smartMeterId', function(req, res) {
     const listOfSpendAgainstPricePlans = pricePlanService.getListOfSpendAgainstEachPricePlanFor(smartMeterId)
     res.status(200).send(listOfSpendAgainstPricePlans)    
 })
+
 module.exports = router
